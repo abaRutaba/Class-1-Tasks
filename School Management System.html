@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>School Management System</title>
+</head>
+
+<body>
+<script>
+	function submit()
+	{
+		console.log("Student Name = "+document.getElementById("Name").value);
+		console.log("Father Name = "+document.getElementById("fName").value);
+		console.log("Class = "+document.getElementById("class").value);
+		console.log("Last Class = "+document.getElementById("lClass").value);
+		console.log("Last Passing Marks = "+document.getElementById("lastPassingmarks").value);
+		console.log("Roll No = "+document.getElementById("rollNo").value);
+		console.log("Admission Fees = "+document.getElementById("aFee").value);
+		console.log("Mothly Fees = "+document.getElementById("mFee").value);
+		console.log("Extracirculum Fees = "+document.getElementById("ecFee").value);
+		console.log("Game fees = "+document.getElementById("gFee").value);
+		console.log("Marks in English = "+document.getElementById("status1").value);
+		console.log("Marks in Physics = "+document.getElementById("status2").value);
+	}
+</script>
+<h1 align="center"> School Management System </h1>
+	<fieldset>
+    	<legend><h4> Student Information </h4></legend>
+        <form action="">
+        
+        	<p>Name</p>
+            <input id="Name" type="text" />
+            
+            <p>Father name</p>
+            <input id="fName" type="text" />
+            
+            <p>Class</p>
+            <input id="class" type="text" />
+            
+            <p>Last Class</p>
+            <input id="lClass" type="text" />
+            
+            <p>Last Passing Marks</p>
+            <input id="lastPassingmarks" type="text" />
+            
+            <p>Roll No #</p>
+            <input id="rollNo" type="text" />
+            
+        </form>
+   </fieldset>
+        
+    <br/><br/><br/>    
+    
+   <fieldset>
+        <legend><h4> Fee Details </h4></legend>
+        <form action="">
+        
+        	<p>Admission Eees</p>
+            <input id="aFee" type="text" />
+            <p>Monthly Fees</p>
+            <input id="mFee" type="text" />
+            
+            <p>Extracirculum Fees</p>
+            <input id="ecFee" type="text" />
+            
+            <p>Game fees</p>
+            <input id="gFee" type="text" />
+   </fieldset>  
+   <fieldset>     
+     	<legend><h4> Marks Details </h4></legend>
+            <p>English 
+            <select id="status1" style="width:200px">
+            	<option value="">Status</option>
+            	<option value="Pass">Pass</option>
+                <option value="Fail">Fail</option>
+            </select>
+            </p>
+            <p>Physics 
+            <select id="status2" style="width:200px">
+            	<option value="">Status</option>
+            	<option value="Pass">Pass</option>
+                <option value="Fail">Fail</option>
+            </select>
+            </p>
+           <br/><br/>
+        </form>
+   </fieldset>
+    <br/><br/>
+   <input type="button" value="Submit Form" onClick="submit()"/>
+</body>
+</html>

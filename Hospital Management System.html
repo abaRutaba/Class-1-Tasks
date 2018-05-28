@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hospital Management System</title>
+</head>
+
+<body>
+<script>
+	function submit()
+	{
+		console.log("Patient Name = "+document.getElementById("pNam").valuee);
+		console.log("Father Name = "+document.getElementById("fName").value);
+		console.log("Date = "+document.getElementById("date").value);
+		console.log("Time = "+document.getElementById("time").value);
+		console.log("Nic = "+document.getElementById("nic").value);
+		console.log("Ward = "+document.getElementById("ward").value);
+		console.log("illness Type = "+document.getElementById("ill").value);
+		console.log("Appoinment = "+document.getElementById("appoinment").value);
+		console.log("Doctor Time = "+document.getElementById("drTime").value);
+		console.log("Appoinment Fee = "+document.getElementById("appFee").value);
+		console.log("Fee Option = "+document.getElementById("feeOption").value);
+		console.log("bar Code = "+document.getElementById("barCode").value);
+	}
+</script>
+<h1 align="center"> Hospital Management System </h1>
+	<fieldset>
+    	<legend><h4> Personal Information </h4></legend>
+        <form action="">
+        
+        	<p>Patient name</p>
+            <input id="pName" type="text" />
+            <p>Father name/Husband name</p>
+            <input id="fName" type="text" />
+            <p>Date</p>
+            <input id="date" type="text" />
+            <p>Time generated</p>
+            <input id="time" type="text" />
+            <p>Nic no:</p>
+            <input id="nic" type="text" />
+            <p>Patient ward</p>
+            <input id="ward" type="text" />
+            
+            <p>Patient illness</p>
+            <select id="ill" style="width:200px">
+           		<option value="">Select here</option>
+            	<option value="Fever">Fever</option>
+                <option value="Flue">Flue</option>
+                <option value="Bp">Bp</option>
+            </select>
+            
+            <p>Dr. Name</p>
+            <select id="drName" style="width:200px">
+            	<option value="">Select Dr. here</option>
+            	<option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="A">D</option>
+                <option value="B">E</option>
+                <option value="C">F</option>
+            </select><br/><br/>
+            
+        </form>
+   </fieldset>
+        
+    <br/><br/><br/>    
+    
+   <fieldset>
+        <legend><h4> Appinment Details </h4></legend>
+        <form action="">
+        
+        	<p>Dr. appoinment time</p>
+            <input id="appoinment" type="text" />
+            <p>Dr. time match</p>
+            <input id="drTime" type="text" />
+            
+            <p>Appoinment fees</p>
+            <input id="appFee" type="text" />
+            
+            <p>Fee Option</p>
+            <select id="feeOption" style="width:200px">
+            	<option value="Select Fee Option">Online</option>
+            	<option value="Online">Online</option>
+                <option value="card option">card option</option>
+                <option value="cash option">cash option</option>
+                <option value="get recieved">get recieved</option>
+            </select>
+            
+            <p>Generated Bar Code</p>
+            <input id="barCode" type="text" />
+           <br/><br/>
+        </form>
+   </fieldset>
+   <input type="button" value="Submit Form" onClick="submit()"/>
+</body>
+</html>

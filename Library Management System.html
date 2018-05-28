@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Library Management System</title>
+</head>
+
+<body>
+<script>
+	var arr1 = ["Physics1", "Physics2", "Physics3", "Physics4", "Physics5", "Physics6", "Physics7", "Physics8", "Physics9", "Physics10"];
+	var arr2 = ["Chemistry1", "Chemistry2", "Chemistry3", "Chemistry4", "Chemistry5", "Chemistry6", "Chemistry7", "Chemistry8", "Chemistry9","Chemistry10"];
+	var arr3 = ["Botony1", "Botony2", "Botony3", "Botony4", "Botony5", "Botony6", "Botony7", "Botony8", "Botony9", "Botony10"];
+	var arr4 = ["Zoology1", "Zoology2", "Zoology3", "Zoology4", "Zoology5", "Zoology6", "Zoology7", "Zoology8", "Zoology9", "Zoology10"];
+	var arr5 = ["Maths1", "Maths2", "Maths3", "Maths4", "Maths5", "Maths6", "Maths7", "Maths8", "Maths8", "Maths10"];
+	function submit()
+	{
+		
+		console.log("User id = "+document.getElementById("uid").value);
+		console.log("User Name = "+document.getElementById("Name").value);
+		console.log("Father name = "+document.getElementById("fName").value);
+		console.log("Class of Students = "+document.getElementById("class").value);
+		console.log("University id = "+document.getElementById("uniId").value);
+		
+		console.log("Physics Book assigned to user = "+document.getElementById("phy").value);
+		console.log("Chemistry Book assigned to user = "+document.getElementById("chem").value);
+		console.log("Botany Book assigned to user = "+document.getElementById("bot").value);
+		console.log("Zoology Book assigned to user = "+document.getElementById("zoo").value);
+		console.log("Maths Book assigned to user = "+document.getElementById("maths").value);
+		
+	}
+</script>
+<h1 align="center"> Library Management System </h1>
+	
+        <form action="">
+        
+        	<p>User id</p>
+            <input id="uid" type="text" />
+            
+            <p>User Name</p>
+            <input id="Name" type="text" />
+            
+            <p>Father name</p>
+            <input id="fName" type="text" />
+            
+            <p>Class of Students</p>
+            <input id="class" type="text" />
+            
+            <p>University id</p>
+            <input id="uniId" type="text" />
+    
+       
+     <p>Physics Books 
+            <select id="phy" style="width:200px">
+            	<option name="">Select Physics Book</option>
+            	<option name= arr1[0]>Physics1</option>
+                <option name= arr1[1]>Physics2</option>
+                <option name= arr1[2] >Physics3</option>
+                <option name= arr1[3] >Physics4</option>
+                <option name= arr1[4] >Physics5</option>
+                <option name= arr1[5] >Physics6</option>
+                <option name= arr1[6] >Physics7</option>
+                <option name= arr1[7] >Physics8</option>
+                <option name= arr1[8] >Physics9</option>
+                <option name= arr1[9] >Physics10</option>
+                
+            </select>
+            </p>
+            <p>Chemistry 
+            <select id="chem" style="width:200px">
+            	<option name="">Select Chemistry Book</option>
+            	<option name= arr2[0] >Chemistry1</option>
+                <option name= arr2[1] >Chemistry2</option>
+                <option name= arr2[2] >Chemistry3</option>
+                <option name= arr2[3] >Chemistry4</option>
+                <option name= arr2[4] >Chemistry5</option>
+                <option name= arr2[5] >Chemistry6</option>
+                <option name= arr2[6] >Chemistry7</option>
+                <option name= arr2[7] >Chemistry8</option>
+                <option name= arr2[8] >Chemistry9</option>
+                <option name= arr2[9] >Chemistry10</option>
+                
+            </select>
+            </p>
+            
+            <p>Botony 
+            <select id="bot" style="width:200px">
+            	<option name="">Select Botony Book</option>
+            	<option name= arr3[0] >Botony1</option>
+                <option name= arr3[1] >Botony2</option>
+                <option name= arr3[2] >Botony3</option>
+                <option name= arr3[3] >Botony4</option>
+                <option name= arr3[4] >Botony5</option>
+                <option name= arr3[5] >Botony6</option>
+                <option name= arr3[6] >Botony7</option>
+                <option name= arr3[7] >Botony8</option>
+                <option name= arr3[8] >Botony9</option>
+                <option name= arr3[9] >Botony10</option>
+            </select>
+            </p>
+            
+            <p>Zoology 
+            <select id="zoo" style="width:200px">
+            	<option name="">Select Zoology Book</option>
+            	<option name= arr4[0] >Zoology1</option>
+                <option name= arr4[1] >Zoology2</option>
+                <option name= arr4[2] >Zoology3</option>
+                <option name= arr4[3] >Zoology4</option>
+                <option name= arr4[4] >Zoology5</option>
+                <option name= arr4[5] >Zoology6</option>
+                <option name= arr4[6] >Zoology7</option>
+                <option name= arr4[7] >Zoology8</option>
+                <option name= arr4[8] >Zoology9</option>
+                <option name= arr4[9] >Zoology10</option>
+            </select>
+            </p>
+            
+            <p>Maths 
+            <select id="maths" style="width:200px">
+            	<option name="">Select Maths Book</option>
+            	<option name= arr5[0] >Maths1</option>
+                <option name= arr5[1] >Maths2</option>
+                <option name= arr5[2] >Maths3</option>
+                <option name= arr5[3] >Maths4</option>
+                <option name= arr5[4] >Maths5</option>
+                <option name= arr5[5] >Maths6</option>
+                <option name= arr5[6] >Maths7</option>
+                <option name= arr5[7] >Maths8</option>
+                <option name= arr5[8] >Maths9</option>
+                <option name= arr5[9] >Maths10</option>
+            </select>
+            </p>
+            </form>
+  
+   <input type="button" value="Submit Form" onClick="submit()"/>
+   
+</body>
+</html>

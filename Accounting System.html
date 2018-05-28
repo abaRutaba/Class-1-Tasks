@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Accounting Management System</title>
+</head>
+
+<body>
+<script>
+	function submit()
+	{
+		console.log("Employee Name = "+document.getElementById("eName").value);
+		console.log("Employee Full Name = "+document.getElementById("efullName").value);
+		console.log("Father Name = "+document.getElementById("fName").value);
+		console.log("Nic = "+document.getElementById("nic").value);
+		console.log("Attendence = "+document.getElementById("att").value);
+		console.log("Overtime allowance = "+document.getElementById("overTimeAllowance").value);
+		console.log("Employee Fix salary = "+document.getElementById("fSalary").value);
+		console.log("Employee trorilling allowance = "+document.getElementById("tAllowance").value);
+		console.log("Employee Advance Salary = "+document.getElementById("aSalary").value);
+		console.log("Employee bonus allowance = "+document.getElementById("bonusAllowance").value);
+		console.log("Employee bonus per month = "+document.getElementById("bonus").value);
+		console.log("Employee tax per month = "+document.getElementById("tax").value);
+		console.log("Calculate All Salary = "+document.getElementById("cSalary").value);
+		console.log("After Recieve = "+document.getElementById("aRecieve").value);
+	}
+</script>
+<h1 align="center"> Accounting Management System </h1>
+	<fieldset>
+    	<legend><h4> Employee Information </h4></legend>
+        <form action="">
+        
+        	<p>Employee Name</p>
+            <input id="eName" type="text" />
+            
+            <p>Employee Full Name</p>
+            <input id="efullName" type="text" />
+            
+            <p>Father name</p>
+            <input id="fName" type="text" />
+            
+            <p>Nic no:</p>
+            <input id="nic" type="text" />
+            
+            <p>Attendence</p>
+            <input id="att" type="text" />
+            
+            <p>Overtime Allowance</p>
+            <input id="overTimeAllowance" type="text" />
+            
+        </form>
+   </fieldset>
+        
+    <br/><br/><br/>    
+    
+   <fieldset>
+        <legend><h4> Salary Details </h4></legend>
+        <form action="">
+        
+        	<p>Employee Fix salary</p>
+            <input id="fSalary" type="text" />
+            <p>Employee advance salary</p>
+            <input id="aSalary" type="text" />
+            
+            <p>Employee trorilling allowance</p>
+            <input id="tAllowance" type="text" />
+            
+            <p>Employee bonus allowance</p>
+            <input id="bonusAllowance" type="text" />
+            
+            <p>Employee bonus per month</p>
+            <input id="bonus" type="text" />
+            <p>Employee tax per month</p>
+            <input id="tax" type="text" />
+            <p>Calculate all salary</p>
+            <input id="cSalary" type="text" />
+            <p>After recieve</p>
+            <input id="aRecieve" type="text" />
+           <br/><br/>
+        </form>
+   </fieldset>
+   <input type="button" value="Submit Form" onClick="submit()"/>
+</body>
+</html>

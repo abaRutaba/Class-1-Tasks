@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment operators</title>
+</head>
+
+<body>
+	
+    <script>
+		function simpleAssignment(a)
+		{
+			
+			console.log("Simple Assignment Operator");
+			console.log("Value of a = "+a);
+			var b = 000;
+			console.log("Initial Value of b = "+b);
+			b = parseInt(a);
+			console.log("Now value of b = "+b);
+			document.getElementById("p1").innerHTML =""+ b;
+		}
+		function addAssignment(a)
+		{
+			
+			console.log("Addition Assignment Operator");
+			var b = 10;
+			console.log("Initial Value of b = "+b);
+			console.log("Value to be incremented by = "+a);
+			b += parseInt(a);
+			console.log("Now value of b = "+b);
+			document.getElementById("p2").innerHTML =""+ b;
+		}
+		function subAssignment(a)
+		{
+			
+			console.log("Subtraction Assignment Operator");
+			var b = 10;
+			console.log("Initial Value of b = "+b);
+			console.log("Value to be decremented by = "+a);
+			b -= parseInt(a);
+			console.log("Now value of b = "+b);
+			document.getElementById("p3").innerHTML =""+ b;
+		}
+		function mulAssignment(a)
+		{
+			
+			console.log("Multiplication Assignment Operator");
+			var b = 10;
+			console.log("Initial Value of b = "+b);
+			console.log("Value to be multiplied by = "+a);
+			b *= parseInt(a);
+			console.log("Now value of b = "+b);
+			document.getElementById("p4").innerHTML =""+ b;
+		}
+		function divAssignment(a)
+		{
+			
+			console.log("Division Assignment Operator");
+			var b = 10;
+			console.log("Initial Value of b = "+b);
+			console.log("Value to be divided by = "+a);
+			b /= parseInt(a);
+			console.log("Now value of b = "+b);
+			document.getElementById("p5").innerHTML =""+ b;
+		}
+		function remainderAssignment(a)
+		{
+			
+			console.log("Remainder Assignment Operator");
+			var b = 10;
+			console.log("Initial Value of b = "+b);
+			console.log("Value to be divided by = "+a);
+			b %= parseInt(a);
+			console.log("Remainder value of b = "+b);
+			document.getElementById("p6").innerHTML =""+ b;
+		}
+		
+	</script>
+    <form action="">
+    	<h4>Simple Assignment operator</h4>
+    	<input type="text" id="num1" placeholder="Enter any number" />
+        <input type="button" value="Ok" onClick="simpleAssignment(document.getElementById('num1').value)" />
+        <p id ="p1"></p>
+        
+        <h4>Addition Assignment operator</h4>
+    	<input type="text" id="num2" placeholder="Enter any number to increment by" />
+        <input type="button" value="Ok" onClick="addAssignment(document.getElementById('num2').value)" />
+        <p id ="p2"></p>
+        
+        <h4>Subtraction Assignment operator</h4>
+    	<input type="text" id="num3" placeholder="Enter any number to decrement by" />
+        <input type="button" value="Ok" onClick="subAssignment(document.getElementById('num3').value)" />
+        <p id ="p3"></p>
+        
+        <h4>Multiplication Assignment operator</h4>
+    	<input type="text" id="num4" placeholder="multiply 10 by?" />
+        <input type="button" value="Ok" onClick="mulAssignment(document.getElementById('num4').value)" />
+        <p id ="p4"></p>
+        
+        <h4>Division Assignment operator</h4>
+    	<input type="text" id="num5" placeholder="divide 10 by?" />
+        <input type="button" value="Ok" onClick="divAssignment(document.getElementById('num5').value)" />
+        <p id ="p5"></p>
+        
+        
+        <h4>Remainder Assignment operator</h4>
+    	<input type="text" id="num6" placeholder="divide 10 by?" />
+        <input type="button" value="Ok" onClick="remainderAssignment(document.getElementById('num6').value)" />
+        <p id ="p6"></p>
+        
+    </form>
+    
+</body>
+</html>
